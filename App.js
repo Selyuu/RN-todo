@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { NavigationBar, Button, Title, Image, View, Text } from '@shoutem/ui';
+import { View, Screen } from '@shoutem/ui';
 import { StyleSheet } from 'react-native';
 
 import HeaderItem from './Components/HeaderItem';
 import FooterButton from './Components/FooterButton';
-import TodoList from './Components/TodoList';
+import Todolist from './Components/Todolist';
 
 export default class App extends Component {
 
@@ -41,11 +41,11 @@ export default class App extends Component {
       return <Expo.AppLoading />;
     }
     return (
-      <View>
+      <Screen>
         <HeaderItem />
-        <TodoList></TodoList>
+        <Todolist />
         <FooterButton />
-      </View>
+      </Screen>
     );
   }
 }
