@@ -1,11 +1,11 @@
 ## To Do List
 Baby steps as I teach myself the choreography of React Native. Starting with a To Do List.
 
-![Hmmm](https://i.imgur.com/GAzKroQ.png "Hmmmm")
+# Screenshot
 
+![Hmmm](https://i.imgur.com/a9keVaI.png "Hmmmm")
 
 # Technology Stack
 - React/React Native
-- Redux
 - Expo
 - Native Base
