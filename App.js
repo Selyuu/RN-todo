@@ -5,6 +5,7 @@ import { StyleSheet } from 'react-native';
 import HeaderItem from './Components/HeaderItem';
 import FooterButton from './Components/FooterButton';
 import Todolist from './Components/Todolist';
+import InputField from './Components/InputField';
 
 export default class App extends Component {
 
@@ -43,6 +44,7 @@ export default class App extends Component {
     return (
       <Screen>
         <HeaderItem />
+        <InputField />
         <Todolist />
         <FooterButton />
       </Screen>
