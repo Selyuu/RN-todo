@@ -3,7 +3,7 @@ Baby steps as I teach myself the choreography of React Native. Starting with a T
 
 # Screenshot
 
-![Hmmm](https://i.imgur.com/a9keVaI.png "Hmmmm")
+![Awww](https://i.imgur.com/awIBLjc.png "Yeah")
 
 # Technology Stack
 - React/React Native
