@@ -1,5 +1,11 @@
 {
   "expo": {
-    "sdkVersion": "23.0.0"
+    "sdkVersion": "23.0.0",
+    "loading": {
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png",
+      "backgroundColor": "#69747f",
+      "backgroundImage": "./assets/backimg.png",
+      "hideExponentText": true
+    }
   }
 }
