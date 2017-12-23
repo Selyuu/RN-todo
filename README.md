@@ -1,5 +1,5 @@
 # Todotia
-Baby steps as I teach myself the choreography of React Native. Starting with a To Do List.
+Baby steps as I teach myself the choreography of React Native. Starting with a to do list.
 
 ## Screenshot
 
