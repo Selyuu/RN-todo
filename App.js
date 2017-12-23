@@ -64,6 +64,16 @@ export default class App extends Component {
     })
   }
 
+  addNew = (newItem) => {
+    this.setState({
+      ...this.state,
+      todos: [
+        {text: newItem, completed: false},
+        ...this.state.todos
+      ]
+    })
+  }
+
 
   // RENDER =======================
 
@@ -74,8 +84,13 @@ export default class App extends Component {
     return (
       <Screen>
         <HeaderItem />
-        <InputField />
-        <Todolist todos={this.state.todos} updateCompleted={this.updateCompleted}/>
+        <InputField 
+          addNew={this.addNew}
+        />
+        <Todolist 
+          todos={this.state.todos} 
+          updateCompleted={this.updateCompleted}
+        />
         <FooterButton />
       </Screen>
     );
