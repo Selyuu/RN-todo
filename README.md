@@ -1,4 +1,4 @@
-# To Do List
+# Todotia
 Baby steps as I teach myself the choreography of React Native. Starting with a To Do List.
 
 ## Screenshot
