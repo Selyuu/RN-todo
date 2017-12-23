@@ -6,12 +6,12 @@ export default class HeaderItem extends Component {
 
   render() {
     return (
-<View style={{ paddingTop: 24 }}> 
-<NavigationBar
-      styleName="inline"
-      centerComponent={<Title>TO DO</Title>}
-    />
-    </View>
+      <View style={{ paddingTop: 24 }}> 
+        <NavigationBar
+          styleName="inline"
+          centerComponent={<Title>TO DO</Title>}
+        />
+      </View>
     )
   }
 }

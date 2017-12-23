@@ -6,7 +6,11 @@ export default class FooterButton extends Component {
   render() {
     return (
       <Button>
-        <Text style={{color: 'red'}}>DELETE COMPLETED</Text>
+        <Text 
+          style={{color: 'red'}}
+        >
+          DELETE COMPLETED
+        </Text>
       </Button>
     )
   }

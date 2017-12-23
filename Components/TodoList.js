@@ -14,7 +14,6 @@ export default class FooterButton extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-      // update original states
       this.setState({
         todos: nextProps.todos,
       });
@@ -30,6 +29,10 @@ export default class FooterButton extends Component {
     return item.completed === false ? 'checkbox-off' : 'checkbox-on';
   }
 
+  lineThrough = (item) => {
+    return item.completed === false ? '' : 'line-through';
+  }
+
 // RENDER ================
 
 
@@ -38,9 +41,19 @@ export default class FooterButton extends Component {
       <View>
       <Divider styleName="line" />
 
-        <Button styleName="space-between" onPress={this.onPress(todo.text)}>
-        <Title style={{height: 80, paddingTop: 30}}>{todo.text}</Title>
-        <Icon name={this.checkedBox(todo)} />
+        <Button 
+          styleName="space-between" 
+          onPress={this.onPress(todo.text)}
+        >
+        <Title 
+          style={{height: 80, paddingTop: 30}} 
+          styleName={this.lineThrough(todo)}>{todo.text}
+        </Title>
+
+        <Icon 
+          name={this.checkedBox(todo)} 
+        />
+
         </Button>
 
         <Divider styleName="line" />
