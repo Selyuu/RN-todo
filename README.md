@@ -8,4 +8,4 @@ Baby steps as I teach myself the choreography of React Native. Starting with a T
 ## Technology Stack
 - React/React Native
 - Expo
-- Native Base
+- Shoutem/ui
