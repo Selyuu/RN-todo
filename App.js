@@ -74,6 +74,15 @@ export default class App extends Component {
     })
   }
 
+  removeCompleted = () => {
+    this.setState({
+      ...this.state,
+      todos: [
+        ...this.state.todos.filter(el => el.completed === false)
+      ]
+    })
+  }
+
 
   // RENDER =======================
 
@@ -91,7 +100,9 @@ export default class App extends Component {
           todos={this.state.todos} 
           updateCompleted={this.updateCompleted}
         />
-        <FooterButton />
+        <FooterButton 
+          removeCompleted={this.removeCompleted}
+        />
       </Screen>
     );
   }
