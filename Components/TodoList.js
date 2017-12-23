@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Button, Text, View, Tile, Title, Divider, ListView, Overlay, Icon } from '@shoutem/ui';
+import { StyleSheet } from 'react-native';
+
 
 export default class FooterButton extends Component {
+
 constructor(props) {
     super(props);
     this.renderRow = this.renderRow.bind(this);
@@ -14,7 +17,12 @@ constructor(props) {
     return (
       <View>
       <Divider styleName="line" />
-        <Button><Icon name="checkbox-off" /><Title styleName="xl-gutter">{todo}</Title></Button>
+
+        <Button styleName="space-between">
+        <Title style={{height: 80, paddingTop: 30}}>{todo}</Title>
+        <Icon name="checkbox-off" />
+        </Button>
+
         <Divider styleName="line" />
       </View>
     );
