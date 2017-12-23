@@ -12,12 +12,20 @@ export default class App extends Component {
   constructor() {
     super();
     this.state = {
-      isReady: false
+      isReady: false,
+      todos: [
+      {text: 'Walk dog', completed: false},
+      {text: 'Do laundry', completed: false},
+      {text: 'Buy sofa', completed: false},
+      {text: 'Order pillows', completed: false},
+      ]
     };
   }
+
   componentWillMount() {
     this.loadFonts();
   }
+
   async loadFonts() {
     await Expo.Font.loadAsync({
       Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf"),
@@ -37,6 +45,28 @@ export default class App extends Component {
     this.setState({ isReady: true });
   }
 
+  updateCompleted = (title) => {
+    this.state.todos.forEach((el, i) => {
+      if (el.text === title) {
+        this.setState({
+          ...this.state,
+          todos: this.state.todos.map(item => {
+            if (item.text === title) {
+              return {
+                ...item,
+                completed: !item.completed
+              }
+            }
+            return item;
+          })
+        })
+      }
+    })
+  }
+
+
+  // RENDER =======================
+
   render() {
     if (!this.state.isReady) {
       return <Expo.AppLoading />;
@@ -45,7 +75,7 @@ export default class App extends Component {
       <Screen>
         <HeaderItem />
         <InputField />
-        <Todolist />
+        <Todolist todos={this.state.todos} updateCompleted={this.updateCompleted}/>
         <FooterButton />
       </Screen>
     );
