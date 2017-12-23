@@ -13,12 +13,7 @@ export default class App extends Component {
     super();
     this.state = {
       isReady: false,
-      todos: [
-      {text: 'Walk dog', completed: false},
-      {text: 'Do laundry', completed: false},
-      {text: 'Buy sofa', completed: false},
-      {text: 'Order pillows', completed: false},
-      ]
+      todos: []
     };
   }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Text, View, Tile, Title, Divider, ListView, Overlay, Icon } from '@shoutem/ui';
+import { Button, Text, View, Tile, Title, Divider, ListView, Overlay, Icon, TouchableOpacity } from '@shoutem/ui';
 import { StyleSheet } from 'react-native';
 
 
